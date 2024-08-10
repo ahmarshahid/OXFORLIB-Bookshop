@@ -9,7 +9,7 @@ function Course() {
   useEffect(()=>{
     const GetBook = async()=>{
       try {
-      const response = await axios.get("http://localhost:4001/book");
+      const response = await axios.get("https://oxforlib-bookshop-backend.vercel.app/book");
       console.log(response.data)
       setBook(response.data)
       } catch (error) {
