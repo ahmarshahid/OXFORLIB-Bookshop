@@ -22,7 +22,7 @@ function Signup() {
         email : data.email,
         password : data.password,
       }
-      await axios.post("http://localhost:4001/user/signup",userInfo)
+      await axios.post("https://oxforlib-bookshop-backend.vercel.app/user/signup",userInfo)
       //Promise resolves
       .then((res)=>{
         console.log(res.data)
