@@ -15,7 +15,7 @@ function Contact(props) {
     email : data.email,
     message : data.message, 
    }
-   await axios.post("http://localhost:4001/contact", MessageInfo)
+   await axios.post("https://oxforlib-bookshop.vercel.app/contact", MessageInfo)
    
   // Resolve Promise
    .then((res)=>{
